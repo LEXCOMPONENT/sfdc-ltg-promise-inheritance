@@ -1,8 +1,8 @@
 # PROMISE
 
 * **Static Resource**
-  * This Javascript file
-  * AuraPromise.resource (content please see ./assets/AuraPromise.js)
+  * [This Javascript file](./assets/AuraPromise.js) made all Promises demonstrated here possible
+  * AuraPromise.resource
 
 * **Components Demo**
   * **ManyCallbacks.cmp**
