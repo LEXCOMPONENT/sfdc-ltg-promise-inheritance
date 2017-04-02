@@ -1,0 +1,54 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="public" controller="ApexController">
+    <ltng:require scripts="{!$Resource.AuraPromise}"/>
+
+    <aura:attribute name="contactName" type="String" default="n/a"/>
+    <aura:attribute name="accountName" type="String" default="n/a"/>
+    <aura:attribute name="ownerName" type="String" default="n/a"/>
+
+    <lightning:layout>
+        <!-- make content occupy 2/3 of the screen -->
+        <lightning:layoutItem size="8" padding="around-small">
+            <!-- define another lightning:layout within the layoutItem -->
+            <lightning:layout horizontalAlign="space">
+                <lightning:layoutItem flexibility="auto">
+                    <lightning:button variant="brand" label="Get Account Owner" onclick="{!c.getAccountOwner}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto">
+                    <lightning:layout horizontalAlign="center" verticalAlign="center" multipleRows="true">
+                        <lightning:layoutItem size="12">
+                            <div class="text-center text-title">Contact Name</div>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12">
+                            <div class="text-center">{!v.contactName}</div>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto">
+                    <lightning:layout horizontalAlign="center" verticalAlign="center" multipleRows="true">
+                        <lightning:layoutItem size="12">
+                            <div class="text-center text-title">Account Name</div>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12">
+                            <div class="text-center">{!v.accountName}</div>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </lightning:layoutItem>
+                <lightning:layoutItem flexibility="auto">
+                    <lightning:layout horizontalAlign="center" verticalAlign="center" multipleRows="true">
+                        <lightning:layoutItem size="12">
+                            <div class="text-center text-title">Owner Name</div>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem size="12">
+                            <div class="text-center">{!v.ownerName}</div>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </lightning:layoutItem>
+            </lightning:layout>
+
+        </lightning:layoutItem>
+
+        <!-- placeholder so the content above can occupy 2/3 of the screen-->
+        <lightning:layoutItem size="4" padding="around-small"></lightning:layoutItem>
+    </lightning:layout>
+
+</aura:component>
