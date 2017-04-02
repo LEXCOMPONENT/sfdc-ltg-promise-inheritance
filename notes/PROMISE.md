@@ -1,7 +1,7 @@
 # PROMISE
 
 * **Static Resource**
-  * [This Javascript file](./assets/AuraPromise.js) made all Promises demonstrated here possible
+  * [This Javascript file](../assets/AuraPromise.js) made all Promises demonstrated here possible
   * AuraPromise.resource
 
 * **Components Demo**
