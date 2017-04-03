@@ -66,4 +66,14 @@ public class ApexController {
     sObject opportunity = Database.query('SELECT ' + fieldName + ' FROM Opportunity WHERE Id =:opportunityId');
     return (String)opportunity.get(fieldName);
   }
+
+  /* methods for inheritance demo */
+
+  @AuraEnabled
+  public static sObject getObject(String recordId, String objectType, String fields) {
+    Id objectId = Id.valueOf(recordId);
+    sObject sObj = Database.query('SELECT ' + fields + ' FROM ' + objectType + ' WHERE Id =:objectId');
+    return sObj;
+  }
+
 }

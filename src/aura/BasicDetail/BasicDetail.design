@@ -1,0 +1,5 @@
+<design:component >
+    <design:attribute name="recordId" label="Record Id" description="Record Id." />
+    <design:attribute name="objectType" label="Object Type" description="Object Type." />
+    <design:attribute name="fields" label="Fields" description="Fields." />
+</design:component>

@@ -1,0 +1,13 @@
+<aura:component extends="c:BasicDetail" implements="flexipage:availableForAllPageTypes">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:set attribute="objectType" value="Opportunity"/>
+    <aura:set attribute="fields" value="Amount,StageName"/>
+
+    <h2>Sub component</h2>
+    <ul>
+        <li>Name from super: {!v.record.Name}</li>
+        <li>Amount: {!v.record.Amount}</li>
+        <li>StageName: {!v.record.StageName}</li>
+    </ul>
+</aura:component>
