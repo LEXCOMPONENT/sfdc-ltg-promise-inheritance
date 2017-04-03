@@ -18,8 +18,8 @@
           * `flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId`
           * [Configure Components for Lightning Experience Record Pages](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_config_for_app_builder_record_home.htm)
           * [Add the lightning component to your record page layout](http://www.forcewizard.com/blog/adding-lightning-components-lightning-experience)
-        `flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction`
         * For `Custom Actions`
+          * `force:lightningQuickAction`
           * [Global Quick Actions vs Object-Specific Quick Actions](https://trailhead.salesforce.com/modules/salesforce1_mobile_app)
             * global actions - create global action from `SETUP/User Interface/Global Actions/Global Actions`, and deploy global action from `SETUP/User Interface/Global Actions/Publisher Layouts` (global actions can be found in Home/Chatter tab for classic version or the right corner's plus sign dropdown list for lightning version)
             * object-specific action - create object-specific action from each object's `Buttons, links, and Actions`, and deploy object-specific action in each object's Page Layout (object-specific actions can be found in Record page)
