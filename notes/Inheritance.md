@@ -11,6 +11,7 @@
 * notes
   * [the example was based on this article](http://peterknolle.com/lightning-component-inheritance/)
   * [a trick when ".getDef().getHelper()" is not available - however, I didn't use it since the inheritance seemed work fine naturally](http://salesforce.stackexchange.com/questions/128895/lightning-component-locker-service-issue/128978)
+  * [How do I create/expose properties that will be passed to my component from the Lightning App Builder](http://salesforce.stackexchange.com/questions/93897/how-do-i-create-expose-properties-that-will-be-passed-to-my-component-from-the-l)
 
 * demo
   * if I use `BasicDetail` (I created an `App Page` item with this component via `Lightning App Builder`), it worked fine and its own helper method `setMessage` got called to set the correct message
