@@ -10,6 +10,7 @@
 
 * notes
   * [the example was based on this article](http://peterknolle.com/lightning-component-inheritance/)
+  * [another article about inheritance](http://bobbuzzard.blogspot.com/2016/03/lightning-components-it-inheritance-jim.html)
   * [a trick when ".getDef().getHelper()" is not available - however, I didn't use it since the inheritance seemed work fine naturally](http://salesforce.stackexchange.com/questions/128895/lightning-component-locker-service-issue/128978)
   * [How do I create/expose properties that will be passed to my component from the Lightning App Builder](http://salesforce.stackexchange.com/questions/93897/how-do-i-create-expose-properties-that-will-be-passed-to-my-component-from-the-l)
 
