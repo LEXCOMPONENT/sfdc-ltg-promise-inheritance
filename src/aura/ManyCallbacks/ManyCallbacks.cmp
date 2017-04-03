@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" access="public" controller="ApexController">
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction" access="public" controller="ApexController">
     <ltng:require scripts="{!$Resource.AuraPromise}"/>
 
     <aura:attribute name="contactName" type="String" default="n/a"/>
