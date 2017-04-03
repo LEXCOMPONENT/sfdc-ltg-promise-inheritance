@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="public" controller="ApexController">
+    <ltng:require scripts="{!$Resource.AuraPromise}"/>
+
+    <ui:button label="Start Job" press="{!c.startJob}"/>
+    <ui:outputtext value="Result " class="boldtext"/>
+    <ui:outputtext aura:id="result" value=" Not started"/>
+</aura:component>

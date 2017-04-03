@@ -5,7 +5,7 @@
     <aura:attribute name="accountName" type="String" default="n/a"/>
     <aura:attribute name="ownerName" type="String" default="n/a"/>
 
-    <lightning:layout>
+    <lightning:layout >
         <!-- make content occupy 2/3 of the screen -->
         <lightning:layoutItem size="8" padding="around-small">
             <!-- define another lightning:layout within the layoutItem -->
