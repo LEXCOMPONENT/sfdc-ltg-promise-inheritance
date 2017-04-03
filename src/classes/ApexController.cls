@@ -57,4 +57,13 @@ public class ApexController {
   public static Decimal getBatchResult(String accountId) {
     return [SELECT TotalAmount__c FROM Account WHERE Id =: accountId].TotalAmount__c;
   }
+
+
+  /* methods for parallel execution demo */
+
+  @AuraEnabled
+  public static String getOpportunityField(Id opportunityId, String fieldName) {
+    sObject opportunity = Database.query('SELECT ' + fieldName + ' FROM Opportunity WHERE Id =:opportunityId');
+    return (String)opportunity.get(fieldName);
+  }
 }

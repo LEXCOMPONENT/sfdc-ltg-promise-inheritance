@@ -1,7 +1,7 @@
 # LongRunJob
 
 * functionality
-  * add the component to Account record home page, click the button and component's javascript controller would run a stateful batch job to calculate the total amount of related opportunities for this specific account
+  * add the component to Account record home page, click the button and component's javascript controller would run a stateful batch job to calculate the total amount of related opportunities for this specific account (javascript controller would use promise.while to query for batch job's status, and would only call another server call to retrieve the result when the job is completed)
 
 * resources
   * AuraPromise.resource
