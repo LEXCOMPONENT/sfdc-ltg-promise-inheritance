@@ -29,9 +29,11 @@
       * [Use Base Lightning Components and Layout](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/lightning_overview.htm)
         * especially the `lightning:layout` and `lightning:layoutItem`, the second and third demos below (component used via object-specific actions) looks ugly since we haven't specified mobile-first layout (using `size`, `smallDeviceSize`, `mediumDeviceSize` in `lightning:layoutItem`)
     * demo
-    ![1.gif](/screenshots/1.gif)
-    ![2.gif](/screenshots/2.gif)
-    ![3.gif](/screenshots/3.gif)
+      * component deployed and used in `Lightning Experience Record Page`
+        ![1.gif](/screenshots/1.gif)
+      * component deployed and used via `object-specific action`
+        ![2.gif](/screenshots/2.gif)
+        ![3.gif](/screenshots/3.gif)
 
 * **notes**
 
